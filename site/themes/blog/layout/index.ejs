@@ -1,0 +1,13 @@
+<!-- Latest Posts -->
+<main class="posts-listing col-lg-8">
+  <div class="container">
+    <div class="row">
+      <% page.posts.each(function(post){ %>
+        <%- partial('basico/postagem-resumo', {post: post, index: true}) %>
+      <% }) %>
+    </div>
+    <%- partial('basico/pagination') %>
+  </div>
+</main>
+
+<%- partial('basico/lateral') %>

@@ -1,0 +1,25 @@
+<div class="widget latest-posts">
+  <header>
+    <h3 class="h6">Últimas postagens</h3>
+  </header>
+  <div class="blog-posts">
+    <% page.posts.limit(5).each(function(post){ %>
+      <a href="#">
+        <div class="item d-flex align-items-center">
+          <% if (post.imagem){ %>    
+          <div class="image">
+            <img src="<%= post.imagem %>" alt="<%= post.alt %>" class="img-fluid">
+          </div>
+          <% } %>
+          <div class="title">
+            <strong><%= post.title %></strong>
+            <div class="d-flex align-items-center">
+              <div class="views">
+                <i class="icon-eye"></i> 500</div>
+            </div>
+          </div>
+        </div>
+      </a>
+      <% }) %>
+  </div>
+</div>
