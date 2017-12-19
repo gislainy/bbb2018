@@ -4,9 +4,9 @@
       <main class="post blog-post col-lg-12">
         <div class="container">
           <div class="post-single">
-             <% if (page.imagem){ %>
+             <% if (post.imagem){ %>
               <div class="post-thumbnail">
-                <img src="<%= page.imagem %>" alt="<%= page.alt %>" class="img-fluid">
+                <img src="<%= post.imagem %>" alt="<%= post.alt %>" class="img-fluid">
               </div>
               <% } %>
                 <div class="post-details">
@@ -16,7 +16,7 @@
                       <a href="#">Financial</a>
                     </div>
                   </div> -->
-                  <h1><%= page.title %>
+                  <h1><%= post.title %>
                     <a href="#">
                       <i class="fa fa-bookmark-o"></i>
                     </a>
@@ -32,13 +32,13 @@
                     </a> -->
                     <div class="d-flex align-items-center flex-wrap">
                       <div class="date">
-                        <i class="icon-clock"></i> <%= date(page.date) %></div>
+                        <i class="icon-clock"></i> <%= date(post.date) %></div>
                       <div class="views">
                         <i class="icon-eye"></i> 500</div>
                     </div>
                   </div>
                   <div class="post-body">
-                      <%- page.content %>
+                      <%- post.content %>
                       
                   </div>
 

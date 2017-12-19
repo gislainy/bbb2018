@@ -12,14 +12,14 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: bbb-2018.online
 root: /
 permalink: :title/
 permalink_defaults:
 
 # Directory
 source_dir: source
-public_dir: public
+public_dir: ../docs
 tag_dir: tags
 archive_dir: archives
 category_dir: categories
